@@ -15,7 +15,7 @@
     ?>
 
     <script>
-        var baseUrl = "<?php echo ADMIN_BASE_URL; ?>/benziadmin";
+        var baseUrl = "<?php echo ADMIN_BASE_URL; ?>";
     </script>
 
     <!--Include CSS files-->
@@ -25,23 +25,24 @@
 
 </head>
 <body>
+    <div id="wrapper">
+        <?php if($logginUser){ ?>
+            <header id="header">
+                <?php
+                echo $this->element('backend/header');
+                ?>
+            </header>
+            <?php /*echo $this->element('backend/leftside'); */?>
+        <?php } ?>
+        <!--BODY CONTENT START-->
+        <?php
+        echo $this->Flash->render();
+        ?>
 
-    <?php if($logginUser){ ?>
-        <header id="header">
-            <?php
-            //echo $this->element('backend/header');
-            ?>
-        </header>
-        <?php echo $this->element('backend/leftside'); ?>
-    <?php } ?>
-    <!--BODY CONTENT START-->
-    <?php
-    echo $this->Flash->render();
-    ?>
-
-    <?=
-    $this->fetch('content')
-    ?>
+        <?=
+        $this->fetch('content')
+        ?>
+    </div>
 
     <?= $this->element('backend/js') ?>
 </body>
