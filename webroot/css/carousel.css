@@ -1,0 +1,311 @@
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+
+/*** **************  ************** ****
+		*** Slider ***
+**** **************  ************** ***/
+.headerCarousel{
+	background:#464346;
+} 
+.headerCarousel .carousel-indicators{
+	    position: relative;
+    width: auto;
+    float: left;
+    top: 3px;
+    left: 0px;
+    margin: 0px;
+} 
+.headerCarousel .carousel-indicators li{
+	border-radius:0px;
+} 
+.headerCarousel .carousel-indicators .active {
+    width: 8px;
+    height: 8px; 
+    background-color: #e34333; 
+}
+.headerCarousel .carousel-indicators li {
+    border:0px;
+	background-color: #ffffff;
+	width: 8px;
+    height: 8px;
+	margin:0px 2px;
+}
+.headerCarousel .carousel-caption { 
+    left:10%;
+	right:10%;
+} 
+.headerCarousel .carousel-caption h1 { 
+    font-size: 42px; 
+	color:#ffffff;
+	font-weight:normal;
+	line-height:1.5em; 
+	text-align:left;
+	margin:15px 0px;
+	text-transform:uppercase;
+}
+.headerCarousel .carousel-caption p {
+    margin: 30px 0px;
+    font-size: 20px; 
+	font-weight:normal;
+	line-height:1.5em;
+	width:90%;
+	text-align:left; 
+	color:#ffffff;
+}
+.headerCarousel .carouselControls {
+    position:absolute;
+	bottom:10px;
+	left:10%;
+	min-width:120px;
+	height:30px;
+}
+.headerCarousel .btnGetStarted {
+    background: #e44235;
+    border: 0px;
+	border-radius:20px;
+    color: #fff;
+    text-shadow: 0 1px 0 #e44235;
+    box-shadow:0px;
+	min-width:180px;
+	font-size:16px;
+	font-weight:normal;
+	padding:12px 10px;
+	margin:0px 20px 0px 0px;
+} 
+.headerCarousel .btnWatchVideo {
+    background: url("../images/icons/watchVideo.png") no-repeat left center; 
+    border: 0px;
+    color: #fff; 
+    box-shadow:0px;
+	padding:12px 10px 12px 50px;
+	font-size:16px;
+	font-weight:normal;
+} 
+.headerCarousel .carouselControlsDiv {
+    position:static; 
+	float:left;
+	width:100%;
+}
+.headerCarousel .carouselControls .leftArrow,
+.headerCarousel .carouselControls .rightArrow{
+	position:relative;
+	float:left;
+	width:25px;
+	height:25px;   
+}
+.headerCarousel .carousel-control.left,
+.headerCarousel .carousel-control.right{ 
+	background: inherit;
+    opacity: 1;
+    position: inherit;
+    width: 100%;
+    float: left;
+}
+.headerCarousel .carousel-control.left > span,
+.headerCarousel .carousel-control.right > span{   
+	width:25px;
+	height:25px;
+	font-size: 0px;
+	margin:0px;
+	top:0px;
+	left:0px;
+	right:0px;
+}
+.headerCarousel .carousel-control.left > span{  
+	background: url("../images/icons/leftArrow02.png") no-repeat center center; 
+}
+.headerCarousel .carousel-control.right > span{  
+	background: url("../images/icons/rightArrow02.png") no-repeat center center; 
+} 
+.quotesContainer{
+	float:left;
+	width:100%;
+	clear:both;
+	padding:15px 0px 15px;
+	margin:15px 0px 0px;
+	text-align:center;
+	background:#e44235;
+}
+.quotesContainer .carousel-caption p { 
+    font-size: 26px; 
+	font-weight:normal;
+	line-height:1.5em;
+	width:90%;
+	text-align:center;
+	margin:0px auto;
+}
+.quotesContainer .carousel-caption h3 { 
+    font-size: 21px; 
+	color:#000;
+	font-weight:normal;
+	line-height:1.5em; 
+	text-align:center;
+	margin:15px 0px;
+}
+.quotesContainer .carousel .customerDPImg{ 
+	width:100%;
+	float:left;
+	clear:both;
+	text-align:center;
+	margin-bottom:20px;
+} 
+.quotesContainer .carousel .item{ 
+	background:inherit;
+	height: 560px;
+}
+.quotesContainer .carousel {
+    height: auto;
+	min-height:560px;
+    margin-bottom: 0px;
+} 
+.quotesContainer .carousel-indicators .active {
+    width: 8px;
+    height: 8px; 
+    background-color: #000000;
+}
+.quotesContainer .carousel-indicators li {
+    border:0px;
+	background-color: #ffffff;
+	width: 8px;
+    height: 8px;
+}
+.quotesContainer .carousel-control.left,
+.quotesContainer .carousel-control.right{ 
+	background:inherit;  
+	opacity: 1;
+}
+.quotesContainer .carousel-control.left > span{  
+	background: url("../images/icons/leftArrow01.png") no-repeat center center;
+	width:35px;
+	height:20px;
+	font-size: 0px;
+}
+.quotesContainer .carousel-control.right > span{  
+	background: url("../images/icons/rightArrow01.png") no-repeat center center;
+	width:35px;
+	height:20px;
+	font-size: 0px;
+} 

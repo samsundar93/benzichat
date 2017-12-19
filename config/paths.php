@@ -100,29 +100,10 @@ define('JSON_PATH',WWW_ROOT);
 
 define('FRONT_CSS','/css/');
 define('FRONT_JS','/js/');
+define('FRONT_BOOT_CSS','/bootstrap/css/');
+define('FRONT_BOOT','/bootstrap/js/');
 define('FRONT_IMG','/webroot/images/');
 define('IMAGES_URL','images/');
-
-
-
-define('SITESETTINGS_LOGO_PATH', WWW_ROOT."images");
-define('SITESETTINGS_LOGO_URL', BASE_URL."webroot/images/");
-
-define('CATEGORY_LOGO_PATH', WWW_ROOT."images/category");
-define('CATEGORY_LOGO_URL', BASE_URL."images/category");
-
-define('RESTAURANTMENU_IMAGE_PATH', WWW_ROOT."images/menu");
-define('RESTAURANTMENU_IMAGE_URL', BASE_URL."images/menu");
-
-define('ITEM_LOGO_PATH', WWW_ROOT."images/item");
-define('ITEM_LOGO_URL', BASE_URL."images/item");
-
-
-define('PROFILE_PATH', WWW_ROOT."images/profile");
-define('PROFILE_URL', BASE_URL."images/profile");
-
-define('RESTAURANT_LOGO_PATH', WWW_ROOT."backend/images/restaurant");
-define('RESTAURANT_LOGO_URL', BASE_URL."backend/webroot/images/restaurant/");
 
 define('ADMIN_CSS','/backend/css/');
 define('ADMIN_BOOT_CSS','/backend/');
